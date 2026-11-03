@@ -1,7 +1,8 @@
 ﻿# WatchCharm
 
 Адаптивний сайт каталогу годинників за макетом Figma. Стек: Vite, семантичний
-HTML, CSS і JavaScript. Перший етап готує основу; секції реалізуються поступово.
+HTML, CSS і JavaScript. Готові основа проєкту, адаптивний Header і бічне меню;
+інші секції реалізуються поступово.
 
 [Макет Figma](https://www.figma.com/design/Dk5XXe4TZu1UlesbMBLnbU/WatchCharm--Copy-?node-id=0-1)
 
@@ -32,6 +33,9 @@ Settings → Pages має бути вибрано Deploy from a branch → gh-pa
 
 ## Структура
 
+Команда `npm run preview` використовує шлях `/Watch_Charm/`, як GitHub Pages.
+Відкривай повну адресу з цим шляхом, яку надрукує Vite.
+
 - `src/index.html` — документ, метадані та підключення partials.
 - `src/partials/` — семантичні блоки сторінки.
 - `src/css/index.css` — точка входу стилів, modern-normalize та спільні стилі.
@@ -39,7 +43,9 @@ Settings → Pages має бути вибрано Deploy from a branch → gh-pa
 - `src/css/container.css` — контейнери для 320–374, 375, 768 і 1280 px.
 - `src/css/utilities.css` — допоміжні класи доступності.
 - `src/main.js` — точка входу JavaScript.
+- `src/js/menu.js` — керування бічним меню, фокусом і блокуванням прокручування.
 - `src/img/` — зображення секцій, які додаються на відповідних етапах.
+- `src/img/header/` — оригінальні іконки Figma та адаптивні фони меню x1/x2.
 - `src/fonts/` — локальні Gilroy Regular, Medium і Semibold у форматі WOFF2.
 - `src/public/favicon.png` — оригінальний фавікон із Figma, 44 × 44 px з
   обводкою.

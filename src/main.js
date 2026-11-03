@@ -1,1 +1,3 @@
-// Interactive section modules will be connected in the following stages.
+import { initMenu } from './js/menu.js';
+
+initMenu();

@@ -1,0 +1,35 @@
+<dialog id="navigation-menu" class="menu-dialog" aria-label="Navigation menu">
+  <button
+    class="icon-button menu-close"
+    type="button"
+    aria-label="Close navigation menu"
+    autofocus
+  >
+    <picture>
+      <source
+        media="(min-width: 768px)"
+        srcset="./img/header/menu-close-tablet.svg"
+      />
+      <img
+        src="./img/header/menu-close-mobile.svg"
+        width="34"
+        height="34"
+        alt=""
+      />
+    </picture>
+  </button>
+
+  <nav class="menu-nav" aria-label="Mobile navigation">
+    <load src="partials/nav-links.html" />
+  </nav>
+
+  <ul class="socials menu-socials" aria-label="Social media">
+    <load src="partials/menu-social.html" network="facebook" label="Facebook" />
+    <load
+      src="partials/menu-social.html"
+      network="instagram"
+      label="Instagram"
+    />
+    <load src="partials/menu-social.html" network="youtube" label="YouTube" />
+  </ul>
+</dialog>

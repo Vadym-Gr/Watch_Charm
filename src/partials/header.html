@@ -1,0 +1,51 @@
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="./" translate="no" aria-label="WatchCharm home">
+      watchcharm
+    </a>
+
+    <nav class="header-nav" aria-label="Primary navigation">
+      <load src="partials/nav-links.html" />
+    </nav>
+
+    <ul class="socials header-socials" aria-label="Social media">
+      <load
+        src="partials/header-social.html"
+        network="facebook"
+        label="Facebook"
+      />
+      <load
+        src="partials/header-social.html"
+        network="instagram"
+        label="Instagram"
+      />
+      <load
+        src="partials/header-social.html"
+        network="youtube"
+        label="YouTube"
+      />
+    </ul>
+
+    <button
+      class="icon-button menu-open"
+      type="button"
+      aria-label="Open navigation menu"
+      aria-controls="navigation-menu"
+      aria-expanded="false"
+      aria-haspopup="dialog"
+    >
+      <picture>
+        <source
+          media="(min-width: 768px)"
+          srcset="./img/header/menu-open-tablet.svg"
+        />
+        <img
+          src="./img/header/menu-open-mobile.svg"
+          width="34"
+          height="34"
+          alt=""
+        />
+      </picture>
+    </button>
+  </div>
+</header>

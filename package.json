@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build --base=/Watch_Charm/",
-    "preview": "vite preview",
+    "preview": "vite preview --base=/Watch_Charm/",
     "format": "prettier --write .",
     "format:check": "prettier --check ."
   },

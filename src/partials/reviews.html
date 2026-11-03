@@ -1,0 +1,63 @@
+<section id="reviews" class="reviews section" aria-labelledby="reviews-title">
+  <div class="container">
+    <h2 id="reviews-title" class="section-title">Reviews</h2>
+    <div
+      class="reviews-browser"
+      role="group"
+      aria-label="Customer reviews"
+      tabindex="0"
+    >
+      <button
+        class="reviews-arrow reviews-previous"
+        type="button"
+        aria-label="Previous reviews"
+        aria-controls="reviews-list"
+        disabled
+        hidden
+      >
+        <span aria-hidden="true">‹</span>
+      </button>
+      <ul id="reviews-list" class="reviews-list">
+        <load
+          src="partials/review-card.html"
+          slug="john-wax"
+          name="John Wax"
+          review="Buying a watch from was the best choice for me. The design is perfectly combined with high quality materials. The strap fits nicely on the hand, and the mechanism works flawlessly."
+        />
+        <load
+          src="partials/review-card.html"
+          slug="victoria-romashenko"
+          name="Victoria Romashenko"
+          review="Can't take my eyes off my watch from. Every time I put it on, it is admired by those around me. The build quality and attention to detail make it a real gem among my accessories."
+        />
+        <load
+          src="partials/review-card.html"
+          slug="anastasia-trachuk"
+          name="Anastasia Trachuk"
+          review="My watch from is a real masterpiece. Every detail impresses with the high quality of execution. Special features like [specify features] make it an indispensable companion in my daily life."
+        />
+      </ul>
+      <button
+        class="reviews-arrow reviews-next"
+        type="button"
+        aria-label="Next reviews"
+        aria-controls="reviews-list"
+        disabled
+        hidden
+      >
+        <span aria-hidden="true">›</span>
+      </button>
+    </div>
+    <p
+      class="visually-hidden"
+      role="status"
+      aria-live="polite"
+      aria-atomic="true"
+      hidden
+      data-reviews-status
+    >
+      Reviews <span data-reviews-start>1</span> to
+      <span data-reviews-end>3</span> of <span data-reviews-total>3</span>
+    </p>
+  </div>
+</section>

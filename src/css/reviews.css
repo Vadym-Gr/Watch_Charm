@@ -1,0 +1,151 @@
+.reviews > .container > .section-title {
+  line-height: 32px;
+}
+
+.reviews-browser {
+  position: relative;
+  margin-top: 24px;
+}
+
+.reviews-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  gap: 20px;
+}
+
+.reviews-item {
+  flex: 0 0 100%;
+  min-width: 0;
+}
+
+.review-card {
+  height: 100%;
+  padding: 32px 36px;
+  border-radius: var(--radius-card);
+  background: var(--color-surface);
+  text-align: center;
+  overflow-wrap: anywhere;
+}
+
+.review-avatar {
+  width: 56px;
+  height: 56px;
+  margin-inline: auto;
+  border-radius: 50%;
+}
+
+.review-name {
+  margin-top: 24px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.review-text {
+  margin: 8px 0 0;
+  color: rgb(12 12 12 / 40%);
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.reviews-arrow {
+  position: absolute;
+  top: 50%;
+  display: grid;
+  place-items: center;
+  width: 20px;
+  height: 48px;
+  padding: 0;
+  border: 0;
+  border-radius: 8px;
+  color: var(--color-text);
+  background: transparent;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 1;
+  transform: translateY(-50%);
+}
+
+.reviews-previous {
+  left: -20px;
+}
+
+.reviews-next {
+  right: -20px;
+}
+
+.reviews-arrow:enabled:hover {
+  color: var(--color-accent);
+}
+
+.reviews-arrow:disabled {
+  opacity: 0.25;
+}
+
+.reviews [hidden] {
+  display: none;
+}
+
+@media (max-width: 1279px) {
+  .reviews-list {
+    touch-action: pan-y pinch-zoom;
+  }
+}
+
+@media (min-width: 768px) {
+  .reviews > .container > .section-title {
+    line-height: 44px;
+  }
+
+  .reviews-browser {
+    margin-top: 40px;
+  }
+
+  .reviews-list {
+    gap: 16px;
+  }
+
+  .reviews-item {
+    flex-basis: calc((100% - 16px) / 2);
+  }
+
+  .review-name {
+    font-size: 18px;
+  }
+
+  .review-text {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .reviews-arrow {
+    width: 32px;
+  }
+
+  .reviews-previous {
+    left: -32px;
+  }
+
+  .reviews-next {
+    right: -32px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .reviews-list {
+    gap: 20px;
+  }
+
+  .reviews-item {
+    flex-basis: calc((100% - 40px) / 3);
+  }
+
+  .reviews-previous {
+    left: -49px;
+  }
+
+  .reviews-next {
+    right: -49px;
+  }
+}

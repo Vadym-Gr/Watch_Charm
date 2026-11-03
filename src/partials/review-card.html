@@ -1,0 +1,16 @@
+<li class="reviews-item" data-review-card>
+  <article class="review-card" aria-labelledby="review-{=$slug}">
+    <img
+      class="review-avatar"
+      src="./img/reviews/{=$slug}.webp"
+      srcset="./img/reviews/{=$slug}.webp 1x, ./img/reviews/{=$slug}@2x.webp 2x"
+      width="56"
+      height="56"
+      alt=""
+      loading="lazy"
+      decoding="async"
+    />
+    <h3 id="review-{=$slug}" class="review-name" translate="no">{=$name}</h3>
+    <blockquote class="review-text"><p>{=$review}</p></blockquote>
+  </article>
+</li>

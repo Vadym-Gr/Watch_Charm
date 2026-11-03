@@ -8,32 +8,82 @@
         aria-label="Product photos"
         data-sale-gallery
       >
-        <ul class="sale-thumbnails" aria-label="Alternative views">
-          <load
-            src="partials/sale-thumbnail.html"
-            slug="front"
-            label="Front view"
-            number="2"
-          />
-          <load
-            src="partials/sale-thumbnail.html"
-            slug="display"
-            label="Display view"
-            number="3"
-          />
-          <load
-            src="partials/sale-thumbnail.html"
-            slug="strap"
-            label="Strap view"
-            number="4"
-          />
-          <load
-            src="partials/sale-thumbnail.html"
-            slug="back"
-            label="Back view"
-            number="5"
-          />
-        </ul>
+        <div class="sale-thumbnail-browser">
+          <button
+            class="sale-arrow sale-previous"
+            type="button"
+            aria-label="Previous photo"
+            aria-controls="sale-main-image sale-thumbnails"
+            data-sale-previous
+            hidden
+          >
+            <svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true">
+              <path
+                d="m12 4-6 6 6 6"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+          <ul
+            id="sale-thumbnails"
+            class="sale-thumbnails"
+            aria-label="Product views"
+          >
+            <load
+              src="partials/sale-thumbnail.html"
+              slug="main"
+              label="Original product view"
+              number="1"
+            />
+            <load
+              src="partials/sale-thumbnail.html"
+              slug="front"
+              label="Front view"
+              number="2"
+            />
+            <load
+              src="partials/sale-thumbnail.html"
+              slug="display"
+              label="Display view"
+              number="3"
+            />
+            <load
+              src="partials/sale-thumbnail.html"
+              slug="strap"
+              label="Strap view"
+              number="4"
+            />
+            <load
+              src="partials/sale-thumbnail.html"
+              slug="back"
+              label="Back view"
+              number="5"
+            />
+          </ul>
+          <button
+            class="sale-arrow sale-next"
+            type="button"
+            aria-label="Next photo"
+            aria-controls="sale-main-image sale-thumbnails"
+            data-sale-next
+            hidden
+          >
+            <svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true">
+              <path
+                d="m8 4 6 6-6 6"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+        </div>
         <div id="sale-main-image" class="sale-main">
           <load
             src="partials/sale-view.html"
@@ -43,7 +93,9 @@
         </div>
         <p id="sale-gallery-help" class="visually-hidden" hidden>
           Select a thumbnail to change the main photo. Select it again to return
-          to the original photo.
+          to the original photo. Use the previous and next buttons to browse all
+          five photos. On mobile and tablet, you can also swipe left or right on
+          the main photo.
         </p>
         <p
           class="visually-hidden"

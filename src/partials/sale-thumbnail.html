@@ -1,0 +1,43 @@
+<li>
+  <button
+    class="sale-thumbnail"
+    type="button"
+    data-sale-thumbnail="{=$slug}"
+    data-photo-number="{=$number}"
+    aria-label="{=$label}"
+    aria-controls="sale-main-image"
+    aria-pressed="false"
+    disabled
+  >
+    <picture>
+      <source
+        media="(min-width: 768px)"
+        srcset="
+          ./img/sale/{=$slug}-thumb-large.webp    1x,
+          ./img/sale/{=$slug}-thumb-large@2x.webp 2x
+        "
+        width="96"
+        height="100"
+      />
+      <img
+        src="./img/sale/{=$slug}-thumb-mobile.webp"
+        srcset="
+          ./img/sale/{=$slug}-thumb-mobile.webp    1x,
+          ./img/sale/{=$slug}-thumb-mobile@2x.webp 2x
+        "
+        width="52"
+        height="54"
+        alt=""
+        loading="lazy"
+        decoding="async"
+      />
+    </picture>
+  </button>
+  <template data-sale-view="{=$slug}">
+    <load
+      src="partials/sale-view.html"
+      slug="{=$slug}"
+      alt="{=$label} of the sale watch"
+    />
+  </template>
+</li>

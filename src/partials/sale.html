@@ -1,0 +1,95 @@
+<section id="sale" class="sale section" aria-labelledby="sale-title">
+  <div class="container">
+    <h2 id="sale-title" class="section-title">Sale</h2>
+    <div class="sale-layout">
+      <div
+        class="sale-gallery"
+        role="group"
+        aria-label="Product photos"
+        data-sale-gallery
+      >
+        <ul class="sale-thumbnails" aria-label="Alternative views">
+          <load
+            src="partials/sale-thumbnail.html"
+            slug="front"
+            label="Front view"
+            number="2"
+          />
+          <load
+            src="partials/sale-thumbnail.html"
+            slug="display"
+            label="Display view"
+            number="3"
+          />
+          <load
+            src="partials/sale-thumbnail.html"
+            slug="strap"
+            label="Strap view"
+            number="4"
+          />
+          <load
+            src="partials/sale-thumbnail.html"
+            slug="back"
+            label="Back view"
+            number="5"
+          />
+        </ul>
+        <div id="sale-main-image" class="sale-main">
+          <load
+            src="partials/sale-view.html"
+            slug="main"
+            alt="MARQ Commander Carbon Edition watch, original product view"
+          />
+        </div>
+        <p id="sale-gallery-help" class="visually-hidden" hidden>
+          Select a thumbnail to change the main photo. Select it again to return
+          to the original photo.
+        </p>
+        <p
+          class="visually-hidden"
+          role="status"
+          aria-live="polite"
+          aria-atomic="true"
+        >
+          Photo <span data-sale-photo-number>1</span> of 5
+        </p>
+      </div>
+
+      <article class="sale-details" aria-labelledby="sale-product-title">
+        <h3 id="sale-product-title" class="sale-product-title" translate="no">
+          MARQ® Commander (Gen 2) - Carbon Edition
+        </h3>
+        <p class="sale-product-tag">
+          Product tag: <span translate="no">706587</span>
+        </p>
+        <div class="sale-prices">
+          <p>
+            <span class="visually-hidden">Sale price:</span>
+            <data class="sale-current-price" value="1500" translate="no"
+              >€1500</data
+            >
+          </p>
+          <p class="sale-original-price">
+            <span class="visually-hidden">Previous price:</span>
+            <del translate="no">€3000</del>
+          </p>
+        </div>
+        <p class="sale-description">
+          The Garmin MARQ Commander Gen 2 Carbon Edition is a modern smartwatch
+          for adventurers that takes materials and features to the next level.
+          The body of the watch is made of very durable Fused Carbon Fiber
+          material and has a precise AMOLED touch screen. The sensitive touch
+          screen is complemented by buttons that can be used in any conditions.
+        </p>
+        <ul class="sale-features" aria-label="Features">
+          <li>Fused carbon fiber</li>
+          <li>Grade-5 Titanuim</li>
+          <li>Athlete</li>
+          <li>Golfer</li>
+          <li>Commander</li>
+          <li>Adventurer</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>

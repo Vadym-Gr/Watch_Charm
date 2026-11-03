@@ -1,0 +1,108 @@
+.advertisement-banner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  min-height: 363px;
+  padding: 60px 28px;
+  overflow: hidden;
+  border-radius: 30px;
+  color: var(--color-background);
+  background: var(--color-text);
+}
+
+.advertisement-banner::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  opacity: 0.2;
+  pointer-events: none;
+  background: url('../img/advertisement/mobile.webp') center / cover no-repeat;
+}
+
+.advertisement-banner > * {
+  position: relative;
+}
+
+.advertisement-title {
+  min-height: 167px;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: -0.02em;
+  overflow-wrap: anywhere;
+}
+
+.advertisement-title span {
+  color: rgb(251 251 251 / 50%);
+}
+
+.advertisement-contact {
+  align-self: flex-start;
+  flex-shrink: 0;
+  padding: 14px 23px;
+  border: 1px solid rgb(251 251 251 / 15%);
+  background: transparent;
+}
+
+.advertisement-contact:hover {
+  color: var(--color-text);
+  background: var(--color-background);
+}
+
+@media (max-width: 767px) and (min-resolution: 2dppx) {
+  .advertisement-banner::before {
+    background-image: url('../img/advertisement/mobile@2x.webp');
+  }
+}
+
+@media (min-width: 768px) {
+  .advertisement-banner {
+    min-height: 425px;
+    gap: 32px;
+    padding: 80px 64px;
+  }
+
+  .advertisement-banner::before {
+    background-image: url('../img/advertisement/tablet.webp');
+  }
+
+  .advertisement-title {
+    min-height: 185px;
+    font-size: 48px;
+    line-height: 44px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1279px) and (min-resolution: 2dppx) {
+  .advertisement-banner::before {
+    background-image: url('../img/advertisement/tablet@2x.webp');
+  }
+}
+
+@media (min-width: 1280px) {
+  .advertisement-banner {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    min-height: 298px;
+    gap: 20px;
+    padding: 80px;
+  }
+
+  .advertisement-banner::before {
+    background-image: url('../img/advertisement/desktop.webp');
+  }
+
+  .advertisement-title {
+    max-width: 690px;
+    min-height: 0;
+    margin-top: 3px;
+  }
+}
+
+@media (min-width: 1280px) and (min-resolution: 2dppx) {
+  .advertisement-banner::before {
+    background-image: url('../img/advertisement/desktop@2x.webp');
+  }
+}

@@ -93,20 +93,4 @@ export function initMenu() {
   document.querySelectorAll('[data-placeholder-link]').forEach(link => {
     link.addEventListener('click', event => event.preventDefault());
   });
-
-  const navigationLinks = [...document.querySelectorAll('.nav-link')];
-  function syncCurrentLink() {
-    const hash = window.location.hash || '#home';
-    const sectionExists = document.getElementById(hash.slice(1));
-    const current = sectionExists ? hash : '#home';
-    navigationLinks.forEach(link => {
-      if (link.getAttribute('href') === current) {
-        link.setAttribute('aria-current', 'location');
-      } else {
-        link.removeAttribute('aria-current');
-      }
-    });
-  }
-  window.addEventListener('hashchange', syncCurrentLink);
-  syncCurrentLink();
 }

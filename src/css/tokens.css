@@ -1,4 +1,5 @@
 :root {
+  --header-height: 74px;
   --font-family: 'Gilroy', Arial, sans-serif;
   --color-background: #fbfbfb;
   --color-surface: #f3f3f3;
@@ -18,6 +19,7 @@
 
 @media (min-width: 768px) {
   :root {
+    --header-height: 92px;
     --radius-panel: 50px;
     --section-spacing: 80px;
   }
@@ -25,6 +27,7 @@
 
 @media (min-width: 1280px) {
   :root {
+    --header-height: 88px;
     --section-spacing: 100px;
   }
 }

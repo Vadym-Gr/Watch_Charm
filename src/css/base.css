@@ -1,5 +1,6 @@
 html {
   min-width: 320px;
+  scroll-padding-top: var(--header-height);
 }
 
 body {

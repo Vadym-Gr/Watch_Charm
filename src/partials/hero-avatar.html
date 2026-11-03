@@ -1,0 +1,32 @@
+<li>
+  <picture>
+    <source
+      media="(min-width: 1280px)"
+      srcset="
+        ./img/hero/avatar-{=$number}-desktop.webp    1x,
+        ./img/hero/avatar-{=$number}-desktop@2x.webp 2x
+      "
+      width="60"
+      height="60"
+    />
+    <source
+      media="(min-width: 768px)"
+      srcset="
+        ./img/hero/avatar-{=$number}-tablet.webp    1x,
+        ./img/hero/avatar-{=$number}-tablet@2x.webp 2x
+      "
+      width="56"
+      height="56"
+    />
+    <img
+      src="./img/hero/avatar-{=$number}-mobile.webp"
+      srcset="
+        ./img/hero/avatar-{=$number}-mobile.webp    1x,
+        ./img/hero/avatar-{=$number}-mobile@2x.webp 2x
+      "
+      width="44"
+      height="44"
+      alt=""
+    />
+  </picture>
+</li>

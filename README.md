@@ -5,6 +5,9 @@ HTML, CSS і JavaScript. Готові основа проєкту, адапти�
 Hero, About Us, Catalog, Advertisement, Sale та Reviews; інші секції
 реалізуються поступово.
 
+Contact Us має адаптивну форму, валідацію та фото. Після коректного заповнення
+Send очищує поля й показує повідомлення, що надсилання ще не підключено.
+
 [Макет Figma](https://www.figma.com/design/Dk5XXe4TZu1UlesbMBLnbU/WatchCharm--Copy-?node-id=0-1)
 
 ## Локальний запуск

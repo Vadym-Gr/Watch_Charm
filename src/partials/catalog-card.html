@@ -1,0 +1,52 @@
+<li class="catalog-item" data-product-card>
+  <article
+    class="catalog-card"
+    aria-labelledby="product-{=$slug}"
+    tabindex="-1"
+  >
+    <picture class="catalog-image">
+      <source
+        media="(min-width: 1280px)"
+        srcset="
+          ./img/catalog/{=$slug}-desktop.webp    1x,
+          ./img/catalog/{=$slug}-desktop@2x.webp 2x
+        "
+        width="304"
+        height="312"
+      />
+      <source
+        media="(min-width: 768px)"
+        srcset="
+          ./img/catalog/{=$slug}-tablet.webp    1x,
+          ./img/catalog/{=$slug}-tablet@2x.webp 2x
+        "
+        width="280"
+        height="312"
+      />
+      <img
+        src="./img/catalog/{=$slug}-mobile.webp"
+        srcset="
+          ./img/catalog/{=$slug}-mobile.webp    1x,
+          ./img/catalog/{=$slug}-mobile@2x.webp 2x
+        "
+        width="279"
+        height="262"
+        alt="{=$name}"
+        translate="no"
+        loading="lazy"
+        decoding="async"
+      />
+    </picture>
+    <h3
+      id="product-{=$slug}"
+      class="catalog-name"
+      translate="no"
+      title="{=$name}"
+    >
+      {=$name}
+    </h3>
+    <p class="catalog-price">
+      <data value="{=$price}" translate="no">€{=$price}</data>
+    </p>
+  </article>
+</li>

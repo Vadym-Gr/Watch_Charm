@@ -1,0 +1,102 @@
+<section id="catalog" class="catalog section" aria-labelledby="catalog-title">
+  <div class="container">
+    <h2 id="catalog-title" class="section-title">Catalog</h2>
+
+    <div
+      class="catalog-browser"
+      role="group"
+      aria-label="Product cards"
+      tabindex="0"
+    >
+      <button
+        class="catalog-arrow catalog-previous"
+        type="button"
+        aria-label="Previous products"
+        aria-controls="catalog-list"
+        disabled
+        hidden
+      >
+        <span aria-hidden="true">‹</span>
+      </button>
+
+      <ul id="catalog-list" class="catalog-list">
+        <load
+          src="partials/catalog-card.html"
+          slug="fenix-7x"
+          name="Garmin Fenix 7X Pro Sapphire Solar"
+          price="500"
+        />
+        <load
+          src="partials/catalog-card.html"
+          slug="marq-athlete"
+          name="Garmin Marq Athlete"
+          price="450"
+        />
+        <load
+          src="partials/catalog-card.html"
+          slug="descent-mk1"
+          name="Garmin Descent MK1"
+          price="680"
+        />
+        <load
+          src="partials/catalog-card.html"
+          slug="d2-delta"
+          name="Garmin D2 Delta PX"
+          price="380"
+        />
+        <load
+          src="partials/catalog-card.html"
+          slug="fenix-6"
+          name="Garmin Fenix 6 Pro Solar"
+          price="400"
+        />
+        <load
+          src="partials/catalog-card.html"
+          slug="tube-s42"
+          name="Tube Watch S42 Date Steel With Black Case"
+          price="395"
+        />
+      </ul>
+
+      <button
+        class="catalog-arrow catalog-next"
+        type="button"
+        aria-label="Next products"
+        aria-controls="catalog-list"
+        disabled
+        hidden
+      >
+        <span aria-hidden="true">›</span>
+      </button>
+    </div>
+
+    <p
+      class="visually-hidden"
+      role="status"
+      aria-live="polite"
+      aria-atomic="true"
+    >
+      Products <span data-catalog-start>1</span>–<span data-catalog-end>6</span>
+      of <span data-catalog-total>6</span>
+    </p>
+
+    <button
+      class="button-link catalog-more"
+      type="button"
+      aria-controls="catalog-list"
+      aria-expanded="false"
+      hidden
+    >
+      Show more
+    </button>
+    <button
+      class="button-link catalog-less"
+      type="button"
+      aria-controls="catalog-list"
+      aria-expanded="true"
+      hidden
+    >
+      Show less
+    </button>
+  </div>
+</section>

@@ -2,11 +2,15 @@
 
 Адаптивний сайт каталогу годинників за макетом Figma. Стек: Vite, семантичний
 HTML, CSS і JavaScript. Готові основа проєкту, адаптивний Header, бічне меню,
-Hero, About Us, Catalog, Advertisement, Sale та Reviews; інші секції
-реалізуються поступово.
+Hero, About Us, Catalog, Advertisement, Sale, Reviews, Contact Us та Footer.
+Наступний етап — фінальна перевірка сайту.
 
 Contact Us має адаптивну форму, валідацію та фото. Після коректного заповнення
 Send очищує поля й показує повідомлення, що надсилання ще не підключено.
+
+Соціальні іконки в Header, меню та Footer ведуть на початкові сторінки Facebook,
+Instagram і YouTube. Terms of Service та Privacy Policy поки неактивні до
+підготовки відповідних сторінок.
 
 [Макет Figma](https://www.figma.com/design/Dk5XXe4TZu1UlesbMBLnbU/WatchCharm--Copy-?node-id=0-1)
 

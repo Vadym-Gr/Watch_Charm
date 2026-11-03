@@ -7,7 +7,7 @@
     <meta name="theme-color" content="#3350e9" />
     <title>WatchCharm</title>
     <script type="module" crossorigin src="/Watch_Charm/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/Watch_Charm/assets/index-CQsfYYB1.css">
+    <link rel="stylesheet" crossorigin href="/Watch_Charm/assets/index-C2UEdaIe.css">
   </head>
   <body id="home">
     <a class="skip-link" href="#main-content">Skip to content</a>
@@ -1126,6 +1126,133 @@
       Reviews <span data-reviews-start>1</span> to
       <span data-reviews-end>3</span> of <span data-reviews-total>3</span>
     </p>
+  </div>
+</section>
+
+  <section
+  id="contact-us"
+  class="contact section"
+  aria-labelledby="contact-title"
+>
+  <div class="container">
+    <h2 id="contact-title" class="section-title">Contact Us</h2>
+    <div class="contact-layout">
+      <form
+        class="contact-form"
+        aria-labelledby="contact-title"
+        aria-describedby="contact-description"
+      >
+        <p id="contact-description" class="contact-description">
+          Please use the form below to contact us. Enter your name, email,
+          phone, and message and we'll get back to you shortly.
+        </p>
+        <div class="contact-fields">
+          <div class="contact-field">
+            <label class="visually-hidden" for="contact-name"
+              >Name (required)</label
+            >
+            <input
+              id="contact-name"
+              name="name"
+              type="text"
+              autocomplete="name"
+              placeholder="Name"
+              required
+              maxlength="100"
+              aria-describedby="contact-name-error"
+            />
+            <p id="contact-name-error" class="contact-error" hidden>
+              Please enter your name.
+            </p>
+          </div>
+          <div class="contact-field">
+            <label class="visually-hidden" for="contact-email"
+              >Email (required)</label
+            >
+            <input
+              id="contact-email"
+              name="email"
+              type="email"
+              autocomplete="email"
+              placeholder="Email"
+              required
+              maxlength="254"
+              aria-describedby="contact-email-error"
+            />
+            <p id="contact-email-error" class="contact-error" hidden>
+              Please enter a valid email address.
+            </p>
+          </div>
+          <div class="contact-field">
+            <label class="visually-hidden" for="contact-phone"
+              >Phone (required)</label
+            >
+            <input
+              id="contact-phone"
+              name="phone"
+              type="tel"
+              autocomplete="tel"
+              placeholder="+380"
+              required
+              maxlength="30"
+              aria-describedby="contact-phone-error"
+            />
+            <p id="contact-phone-error" class="contact-error" hidden>
+              Please enter a phone number with 7 to 15 digits. You can use +,
+              spaces, parentheses, and hyphens.
+            </p>
+          </div>
+          <div class="contact-field">
+            <label class="visually-hidden" for="contact-comment"
+              >Comment (optional)</label
+            >
+            <textarea
+              id="contact-comment"
+              name="comment"
+              placeholder="Comment"
+              maxlength="2000"
+              rows="3"
+            ></textarea>
+          </div>
+        </div>
+        <button class="button-link contact-send" type="submit" disabled>
+          Send
+        </button>
+        <p class="contact-status" role="status" aria-live="polite" hidden>
+          Your form was completed correctly and has been cleared. Sending
+          messages is not connected yet; no message has been sent.
+        </p>
+        <noscript
+          ><p class="contact-notice">
+            Please enable JavaScript to use this form. Sending messages is not
+            connected yet.
+          </p></noscript
+        >
+      </form>
+      <picture class="contact-image">
+        <source
+          media="(min-width: 1280px)"
+          srcset="/Watch_Charm/assets/desktop-B7t2RB-y.webp 1x, /Watch_Charm/assets/desktop@2x-BFH8otn0.webp 2x"
+          width="530"
+          height="556"
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="/Watch_Charm/assets/tablet-ZioCBYEx.webp 1x, /Watch_Charm/assets/tablet@2x-XBtTWCTp.webp 2x"
+          width="704"
+          height="556"
+        />
+        <img
+          src="/Watch_Charm/assets/mobile-Zb-6ylxO.webp"
+          srcset="/Watch_Charm/assets/mobile-Zb-6ylxO.webp 1x, /Watch_Charm/assets/mobile@2x-DFT-g0Mv.webp 2x"
+          width="335"
+          height="512"
+          alt="Watch displayed on stone blocks against a dark background"
+          loading="lazy"
+          decoding="async"
+        />
+      </picture>
+    </div>
   </div>
 </section>
 

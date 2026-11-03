@@ -129,7 +129,7 @@
 
 .sale-product-tag {
   margin-top: 10px;
-  color: rgb(251 251 251 / 50%);
+  color: var(--color-on-accent-muted);
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
@@ -154,7 +154,7 @@
 }
 
 .sale-original-price {
-  color: rgb(251 251 251 / 50%);
+  color: var(--color-on-accent-muted);
   font-size: 12px;
   font-weight: 400;
   line-height: 14px;
@@ -162,7 +162,7 @@
 
 .sale-description {
   margin-top: 28px;
-  color: rgb(251 251 251 / 70%);
+  color: var(--color-on-accent-muted);
   line-height: 18px;
 }
 

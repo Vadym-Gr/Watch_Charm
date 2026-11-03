@@ -159,10 +159,6 @@
   line-height: 14px;
 }
 
-.footer-copyright {
-  opacity: 0.9;
-}
-
 .footer-policies {
   display: flex;
   flex-wrap: wrap;

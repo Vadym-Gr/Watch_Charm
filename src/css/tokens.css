@@ -4,6 +4,8 @@
   --color-surface: #f3f3f3;
   --color-text: #0c0c0c;
   --color-text-muted: rgb(12 12 12 / 70%);
+  --color-text-secondary: rgb(12 12 12 / 60%);
+  --color-on-accent-muted: rgb(251 251 251 / 90%);
   --color-accent: #3350e9;
   --color-accent-hover: #1f3cd4;
   --color-border: rgb(12 12 12 / 15%);

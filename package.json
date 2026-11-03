@@ -7,15 +7,18 @@
     "dev": "vite",
     "build": "vite build --base=/Watch_Charm/",
     "preview": "vite preview --base=/Watch_Charm/",
+    "check": "npm run format:check && npm run build",
     "format": "prettier --write .",
     "format:check": "prettier --check ."
   },
+  "engines": {
+    "node": ">=24.0.0"
+  },
   "devDependencies": {
-    "glob": "^11.0.0",
     "postcss": "^8.4.41",
     "postcss-sort-media-queries": "^5.2.0",
     "prettier": "^3.9.10",
-    "vite": "^5.4.6"
+    "vite": "^7.3.7"
   },
   "author": "Alexander Repeta <alexander.repeta@gmail.com>",
   "license": "ISC",

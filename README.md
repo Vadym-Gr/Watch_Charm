@@ -3,7 +3,8 @@
 Адаптивний сайт каталогу годинників за макетом Figma. Стек: Vite, семантичний
 HTML, CSS і JavaScript. Готові основа проєкту, адаптивний Header, бічне меню,
 Hero, About Us, Catalog, Advertisement, Sale, Reviews, Contact Us та Footer.
-Наступний етап — фінальна перевірка сайту.
+Етапи реалізації й фінальна локальна перевірка завершені.
+[Звіт перевірки та відомі обмеження](docs/qa-report.md).
 
 Contact Us має адаптивну форму, валідацію та фото. Після коректного заповнення
 Send очищує поля й показує повідомлення, що надсилання ще не підключено.
@@ -33,7 +34,13 @@ npm run build
 npm run preview
 npm run format
 npm run format:check
+npm run check
+npm audit
 ```
+
+`npm run check` перевіряє форматування й виконує production-збірку. Цю ж команду
+запускає GitHub Actions перед публікацією. Використовується Vite 7; залежності
+зафіксовані в `package-lock.json`.
 
 Збірка потрапляє в `dist/`. Для GitHub Pages задано базовий шлях
 `/Watch_Charm/`. Після push у `main` workflow публікує результат у `gh-pages`. У

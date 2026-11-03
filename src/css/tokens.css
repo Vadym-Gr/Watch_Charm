@@ -1,0 +1,28 @@
+:root {
+  --font-family: 'Gilroy', Arial, sans-serif;
+  --color-background: #fbfbfb;
+  --color-surface: #f3f3f3;
+  --color-text: #0c0c0c;
+  --color-text-muted: rgb(12 12 12 / 70%);
+  --color-accent: #3350e9;
+  --color-accent-hover: #1f3cd4;
+  --color-border: rgb(12 12 12 / 15%);
+  --radius-card: 30px;
+  --radius-panel: 30px;
+  --radius-button: 16px;
+  --radius-input: 12px;
+  --section-spacing: 60px;
+}
+
+@media (min-width: 768px) {
+  :root {
+    --radius-panel: 50px;
+    --section-spacing: 80px;
+  }
+}
+
+@media (min-width: 1280px) {
+  :root {
+    --section-spacing: 100px;
+  }
+}
